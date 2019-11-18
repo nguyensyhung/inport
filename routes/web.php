@@ -18,6 +18,7 @@ Route::get('/', function () {
 
 Route::get('csv_file', 'CsvFile@index');
 
+Route::get('csv_file/export/users/{user}', 'CsvFile@userById')->name('export.users');
 Route::get('csv_file/export', 'CsvFile@csv_export')->name('export');
 
 Route::post('csv_file/import', 'CsvFile@csv_import')->name('import');

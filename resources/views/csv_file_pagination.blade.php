@@ -16,7 +16,7 @@
   <tr>
    <td>{{ $row->name }}</td>
    <td>{{ $row->email }}</td>
-   <td><a class="btn btn-warning" href="{{ route('export') }}">Export User Data</a></td>
+   <td><a class="btn btn-warning" href="{{ route('export.users', $row->id) }}">Export User Data</a></td>
   </tr>
  @endforeach
  </tbody>
